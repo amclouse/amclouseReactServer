@@ -1,11 +1,11 @@
 {
-  "name": "Blue-Badge-Project",
+  "name": "blue-badge-project",
   "version": "1.0.0",
   "description": "server for BlueBadge app",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
+    "start": "node app.js"
   },
   "author": "ADAM",
   "license": "MIT",
