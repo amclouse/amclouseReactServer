@@ -20,6 +20,6 @@ app.use('/smash/test', function(req, res) {
     res.send('This is info from the server')
 });
 //APP START
-app.listen(3002, function() {
+app.listen(process.env.PORT, function() {
     console.log('App is listening on 3002')
 })
