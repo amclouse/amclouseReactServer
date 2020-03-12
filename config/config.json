@@ -1,0 +1,26 @@
+{
+    "development": {
+      "username": "postgres", 
+      "password": "jasper",  
+      "database": "SmashIndy", 
+      "host": "127.0.0.1",
+      "port": "5432", 
+      "dialect": "pieApi" 
+    },
+    "test": {
+      "username": "postgres",
+      "password": "jasper",
+      "database": "SmashIndy",
+      "host": "127.0.0.1",
+      "port": "5432",
+      "dialect": "postgres"
+    },
+    "production": {
+      "username": "postgres",
+      "password": "jasper",
+      "database": "SmashIndy",
+      "host": "127.0.0.1",
+      "port": "5432",
+      "dialect": "postgres"
+    }
+  }
