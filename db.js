@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('SmashIndy', 'postgres', 'jasper', {
-    host: 'localhost',
+const sequelize = new Sequelize(process.env.DATABASe_URL, {
+    
     dialect: 'postgres',
 });
 
