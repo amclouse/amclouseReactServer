@@ -1,7 +1,7 @@
 // EXPRESS
+require('dotenv').config()
 const express = require('express');
 const app = express(); 
-require('dotenv').config()
 // CONTROLLER IMPORTS
 const tourney = require("./controllers/tourneycontroller")
 const user = require("./controllers/usercontroller");
@@ -15,11 +15,12 @@ app.use(require('./middleware/headers'));
 // ROUTES
 app.use('/smash/user', user)
 app.use('/smash/tourney', tourney)
+
 //TEST
 app.use('/smash/test', function(req, res) {
     res.send('This is info from the server')
 });
 //APP START
 app.listen(process.env.PORT, function() {
-    console.log('App is listening on 3002')
+    console.log(`App is listening on ${process.env.PORT}`)
 })
