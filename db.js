@@ -1,14 +1,14 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('SmashIndy', 'postgres', 'jasper', {
-    host: 'localhost',
-    dialect: 'postgres',
-});
-//for Heroku
-// const sequelize = new Sequelize(process.env.DATABASE_URL, {
-    
+// const sequelize = new Sequelize('SmashIndy', 'postgres', 'jasper', {
+//     host: 'localhost',
 //     dialect: 'postgres',
 // });
+//for Heroku
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+    
+    dialect: 'postgres',
+});
 
 sequelize.authenticate().then(
     function() {
