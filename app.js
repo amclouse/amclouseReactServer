@@ -23,4 +23,4 @@ app.use('/smash/test', function(req, res) {
 //APP START
 app.listen(process.env.PORT, function() {
     console.log(`App is listening on ${process.env.PORT}`)
-})
+}) 
