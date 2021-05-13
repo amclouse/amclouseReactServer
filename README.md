@@ -15,5 +15,5 @@ each time it is updated. If you do not have node project manager installed, plea
 npm install
 ```
 
-##Author
+#Author
 Adam Clouse
